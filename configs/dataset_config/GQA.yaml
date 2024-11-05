@@ -1,0 +1,8 @@
+dataset_config:
+  name: GQA
+  meta_data_name: gqa_sample_2000
+  data_path: '/./wjh/datasets/GQA/images/'
+  start: 0
+  max_samples: null
+  batch_size: 2000
+prompt_file: ./prompts/viper_GQA.prompt

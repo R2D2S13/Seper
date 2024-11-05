@@ -1,0 +1,14 @@
+# For example:
+multiprocessing: False
+path_pretrained_models: '/.t/pretrained_models'
+
+dataset:
+    meta_data_path: 'meta_data/gqa_structual.csv'
+    data_path: '/.s/GQA/images/'
+    max_samples: 50
+    batch_size: 1
+# blip_v2_model_type: blip2-lora   # Change to blip2-flan-t5-xl for smaller GPUs
+blip_path: '/.Tplus/vipergptplus/model/blip2-flan-t5-xxl'
+blip_half_precision: True
+# Add more changes here, following the same format as base_config.yaml
+execute_code: True

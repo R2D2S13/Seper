@@ -1,0 +1,8 @@
+dataset_config:
+  name: RefCOCO
+  meta_data_name: RefCOCO
+  data_path: /./wjh/datasets/coco2014/
+  start: 0
+  batch_size: 200
+  max_samples: null
+prompt_file: /./wjh/Crescendo/prompts/viper_refcoco.prompt

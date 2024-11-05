@@ -1,0 +1,37 @@
+prog_env:
+    inject_html: True
+    code_check: False
+    function_check_list: []
+
+code_generation:
+    model: gpt-3.5-turbo-16k-0613
+    prompt_file: /.do/prompts/VISPROG/code_generate.prompt
+    input_image_varname: IMAGE
+    image_preprocess: image.thumbnail((640,640),Image.Resampling.LANCZOS)
+    result_varname_proxy: FINAL_RESULT
+    output_type: varname
+    function_name: null
+    parse_args:
+        temperature: 0.7
+        top_p: 0.5
+        max_tokens: 512
+        frequency_penalty: 0
+        presence_penalty: 0
+
+code_execution: 
+    api_file: /.do/vision_processes/VISPROG/VISPROG_api.py
+    
+load_models:
+    blip1_visprog: True
+    owlvit_visprog: True
+
+blip1_visprog: 
+    weight_path: Salesforce/blip-vqa-capfilt-large
+    
+owlvit_visprog:
+    thresh: 0.1
+    nms_thresh: 0.5
+    weight_path: google/owlvit-large-patch14
+
+datasets:
+    name: gqa_sample_2000

@@ -1,0 +1,13 @@
+dataset_config:
+  name: OKVQA
+  meta_data_name: vqa_val_eval.json
+  data_path: '/./wjh/datasets/coco2014/'
+  start: 0
+  max_samples: 1000
+  batch_size: 1000
+
+prog_env:
+    replan: False
+    simple_query_max_check_count: 10
+    valid_query_max_check_count: 5
+prompt_file: /./wjh/Crescendo/prompts/viper_OK-VQA.prompt

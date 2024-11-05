@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="../code_highlight_style.css">
+<html>
+    <head>
+    <style>
+        
+        /* 横分割线 */
+        hr{
+            border: 0.5px solid #818682; /* 分割线的样式 */
+            margin-top: 6px; /* 上边距，根据需要调整 */
+            margin-bottom: 6px; /* 下边距，根据需要调整 */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        /* 样式用于包装内容并设置宽度 */
+                .content-wrapper {
+            display: flex;
+            width: max-content; /* 设置宽度为内容中最长行的宽度 */
+        }
+
+
+
+        /* 竖直分割线 */
+        .vertical-line-right {
+            border: 0.5px solid #818682; /* 设置分割线样式 */
+            margin-left: 0.5px; /* 设置分割线与内容的距离 */
+            margin-top: 6px; /* 上边距，根据需要调整 */
+            margin-bottom: 6px; /* 下边距，根据需要调整 */
+        }
+        .vertical-line-left {
+            border: 0.5px solid #818682; /* 设置分割线样式 */
+            margin-right: 0.5px; /* 设置分割线与内容的距离 */
+            margin-top: 6px; /* 上边距，根据需要调整 */
+            margin-bottom: 6px; /* 下边距，根据需要调整 */
+        }
+        </style>
+    </head>
+<body>
+    
+
+    <div class="content-wrapper">
+
+        <div class="vertical-line-left"></div>
+        
+        <div>
+
+            PROCESS_INSERT_HERE
+            <hr>
+
+        </div>
+
+        <div class="vertical-line-right"></div>
+        <div style="margin-left: 10px;font-size: 20px;">
+            <span style="color: black;">CODE</span>
+            CODE_INSERT_HERE
+            <p>Query:<span style="color: #d30202;">QUERY_INSERT_HERE</span></p>
+            <p>LABEL:<span style="color: #2c8553;">ANSWER_INSERT_HERE</span></p>
+        </div>
+    </div>
+</body>
+</html>
